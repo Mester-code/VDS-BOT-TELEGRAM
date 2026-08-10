@@ -1,266 +1,120 @@
+برای اینکه صفحه گیت‌هاب پروژه‌تان ظاهری کاملاً حرفه‌ای، چشم‌نواز و به قول معروف «ناب» داشته باشد، باید از ترکیب Markdown و تگ‌های مجاز HTML (مثل <div align="center">، <details> و نشان‌ها یا Badges) استفاده کنیم.
+در این نسخه، از بنرهای گرافیکی داینامیک، نشان‌های تکنولوژی (Shields)، لیست‌های کشویی (برای شلوغ نشدن صفحه) و جداول زیبا استفاده شده است تا در رابط کاربری وبِ گیت‌هاب به بهترین شکل رندر شود.
+کد زیر را کپی کرده و دقیقاً داخل فایل README.md خود پیست کنید:
 <div align="center">
 
-# 🚀 HostVDS Telegram Bot
-
-### سیستم هوشمند فروش VPS ساعتی با ربات تلگرام
-
-<br>
-
-<img src="https://img.shields.io/badge/Version-1.0.0-blue?style=for-the-badge" alt="Version">
-<img src="https://img.shields.io/badge/PHP-7.4%2B-purple?style=for-the-badge&logo=php" alt="PHP">
-<img src="https://img.shields.io/badge/MySQL-5.7%2B-orange?style=for-the-badge&logo=mysql" alt="MySQL">
-<img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License">
-
-<br>
-<br>
-
-![Banner](https://via.placeholder.com/900x300/1a1a2e/16213e?text=HostVDS+Telegram+Bot)
+<!-- هدر گرافیکی (میتوانید لینک عکس اختصاصی خود را جایگزین کنید) -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=250&section=header&text=HostVDS%20Reseller%20Bot&fontSize=50&fontAlignY=38&desc=Advanced%20Telegram%20Bot%20For%20OpenStack%20VPS&descAlignY=55&descAlign=60" width="100%" />
 
 <br>
 
-**پلتفرم پیشرفته مدیریت فضای ابری با قابلیت‌های خودکارسازی کامل**
+<!-- نشان‌های تکنولوژی -->
+<a href="https://php.net"><img src="https://img.shields.io/badge/PHP-7.4%2B-777BB4?style=for-the-badge&logo=php&logoColor=white"></a>
+<a href="https://mysql.com/"><img src="https://img.shields.io/badge/Database-MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"></a>
+<a href="https://www.openstack.org/"><img src="https://img.shields.io/badge/API-OpenStack-ED1944?style=for-the-badge&logo=openstack&logoColor=white"></a>
+<a href="https://core.telegram.org/bots"><img src="https://img.shields.io/badge/Platform-Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"></a>
+
+<br><br>
+
+**یک ربات تلگرامی فوق‌پیشرفته برای مدیریت، فروش و اتوماسیون سرورهای ابری بر بستر OpenStack**
+
+[گزارش باگ](https://github.com/YOUR_USERNAME/YOUR_REPO/issues) · [درخواست قابلیت جدید](https://github.com/YOUR_USERNAME/YOUR_REPO/issues)
 
 </div>
 
 ---
 
-## 📋 فهرست مطالب
+## ⚡️ چرا این ربات؟
+این پروژه یک اسکریپت ساده نیست؛ بلکه یک **سیستم مدیریت مشتریان (CRM)** و **اتوماسیون فروش** کامل در بستر تلگرام است که به صورت مستقیم با API دیتاسنتر (OpenStack) ارتباط برقرار می‌کند. کاربر می‌تواند بدون نیاز به خروج از تلگرام، سرور بخرد، سیستم‌عامل نصب کند، آی‌پی بگیرد و سرور خود را ریبوت کند.
+
+> **نکته:** معماری این سورس بر پایه یک فایل اصلی منسجم و یک فایل کرون‌جاب طراحی شده تا استقرار (Deployment) آن روی هر هاستی در سریع‌ترین زمان ممکن انجام شود.
+
+---
+
+## 💎 امکانات و قابلیت‌ها
 
 <div align="center">
-
-[معرفی](#-معرفی) • 
-[ویژگی‌ها](#-ویژگیهای-کلیدی) • 
-[نصب](#-نصب-و-راهاندازی) • 
-[پیکربندی](#-پیکربندی) • 
-[Cron Job](#-تنظیم-cron-job) • 
-[نقشه راه](#-نقشه-راه)
+  
+| 👨‍💻 پنل مدیریت (Admin) | 🛒 پنل کاربری (Client) |
+| :--- | :--- |
+| 🛡 **استخر اکانت‌ها:** دور زدن محدودیت 10 سرور با اتصال چند اکانت HostVDS | 🚀 **خرید آنی:** انتخاب لوکیشن، پلن و ساخت خودکار سرور در چند ثانیه |
+| 💰 **مدیریت مالی:** تایید/رد فیش‌های واریزی با یک کلیک | 🔄 **مدیریت سرور:** ریبوت، روشن، خاموش و دریافت IP |
+| 📊 **آمار زنده:** مشاهده وضعیت اکانت‌ها و سرورهای فعال | 🔑 **تغییر رمز عبور:** تغییر روت پسورد مستقیماً از طریق API |
+| ⚙️ **داینامیک:** افزودن لوکیشن و قیمت‌گذاری از داخل ربات | 💳 **کیف پول:** شارژ حساب، انتقال موجودی و مشاهده تراکنش‌ها |
+| 📢 **ارسال پیام:** سیستم اطلاع‌رسانی همگانی به کاربران | ⏱ **تمدید خودکار:** سیستم Auto-Renew برای جلوگیری از قطعی |
 
 </div>
 
 ---
 
-## 🎯 معرفی
+## 📸 تصاویری از محیط ربات
 
 <div align="center">
-<table>
-<tr>
-<td align="center" width="33%">
-
-### 🕐 فروش ساعتی
-
-پرداخت به ازای هر ساعت استفاده
-
-</td>
-<td align="center" width="33%">
-
-### 🤖 کاملاً خودکار
-
-از ثبت سفارش تا تحویل سرور
-
-</td>
-<td align="center" width="33%">
-
-### ⚡ تحویل سریع
-
-سرور در کمتر از ۳۰ ثانیه
-
-</td>
-</tr>
-<tr>
-<td align="center" width="33%">
-
-### 🔐 امنیت بالا
-
-رمزهای قوی و منحصر به فرد
-
-</td>
-<td align="center" width="33%">
-
-### 🎛️ پنل مدیریت
-
-کنترل کامل از طریق ربات
-
-</td>
-<td align="center" width="33%">
-
-### 💰 کسب درآمد
-
-فروش خودکار ۲۴ ساعته
-
-</td>
-</tr>
-</table>
+  <img src="https://via.placeholder.com/250x450.png?text=User+Panel+Screenshot" width="250" alt="منوی کاربری">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="https://via.placeholder.com/250x450.png?text=Server+Management" width="250" alt="مدیریت سرور">
+  <br>
+  <i>(اسکرین‌شات‌های ربات خود را جایگزین لینک‌های بالا کنید)</i>
 </div>
 
 ---
 
-## 🔥 ویژگی‌های کلیدی
+## 🚀 راهنمای نصب و راه‌اندازی سریع
 
-### 🛒 سیستم فروش
+برای شلوغ نشدن صفحه، مراحل نصب را در لیست کشویی زیر قرار داده‌ایم. روی آن کلیک کنید:
 
+<details>
+<summary><b>🛠 نمایش مراحل نصب قدم‌به‌قدم</b></summary>
+
+<br>
+
+**قدم اول: آماده‌سازی دیتابیس**
+یک دیتابیس MySQL بسازید. نیازی به ایمپورت جداول به صورت دستی نیست، جداول کلیدی در صورت عدم وجود به صورت خودکار پیکربندی می‌شوند (یا فایل `.sql` همراه سورس را ایمپورت کنید).
+
+**قدم دوم: ویرایش کانفیگ‌ها**
+فایل `bot.php` را باز کرده و اطلاعات زیر را جایگذاری کنید:
+```php
+$BOT_TOKEN  = "YOUR_TELEGRAM_BOT_TOKEN"; 
+$ADMIN_ID   = 123456789; // Telegram User ID
+
+قدم سوم: اتصال اکانت HostVDS
+در متغیر $navidi_accounts اطلاعات لاگین دیتاسنتر خود را وارد کنید:
+array(
+    'name'       => 'Account 1',
+    'auth_url'   => "[https://os-api.hostvds.com/identity/v3/auth/tokens](https://os-api.hostvds.com/identity/v3/auth/tokens)",
+    'user_id'    => "...",
+    'password'   => "...",
+    'project_id' => "...",
+    'max_servers'=> 10,
+    'status'     => 1,
+)
+
+قدم چهارم: تنظیم Webhook و Cronjob
+آدرس ربات خود را به تلگرام متصل کنید و دستور زیر را برای اجرای هر ۲ دقیقه در سرور لینوکسی خود قرار دهید:
+*/2 * * * * /usr/local/bin/php -q /path/to/cron.php >/dev/null 2>&1
+
+</details>
+🧩 معماری فنی (Technical Stack)
+ * State Machine: مدیریت مراحل گفتگو (ارسال فیش، انتخاب پلن) با استفاده از فیلدهای JSON در دیتابیس بدون درگیری با Session.
+ * Cloud-Init: استفاده از cloud-config برای تزریق کانفیگ و پسورد به سرورهای اوبونتو هنگام Build.
+ * API Wrapper: توابع اختصاصی cURL برای هندل کردن توکن‌های OpenStack و جلوگیری از Expire شدن آن‌ها.
+🛡 امنیت و هشدارها
+> [!WARNING]
+> اطلاعات حساس شما (پسورد دیتاسنتر و دیتابیس) درون فایل‌ها قرار دارد. حتماً مطمئن شوید که قابلیت Directory Listing روی هاست شما غیرفعال است تا کسی نتواند فایل‌های شما را ببیند.
+> 
 <div align="center">
-<table>
-<tr>
-<th>ویژگی</th>
-<th>توضیحات</th>
-</tr>
-<tr>
-<td>🕐 فروش ساعتی</td>
-<td>پرداخت به ازای هر ساعت استفاده</td>
-</tr>
-<tr>
-<td>📦 پلن‌های متنوع</td>
-<td>تعریف نامحدود پلن با منابع مختلف</td>
-</tr>
-<tr>
-<td>🌍 چندین لوکیشن</td>
-<td>پشتیبانی از دیتاسنترهای مختلف</td>
-</tr>
-<tr>
-<td>💳 کارت به کارت</td>
-<td>تایید دستی رسید توسط ادمین</td>
-</tr>
-<tr>
-<td>🔗 درگاه آنلاین</td>
-<td>یکپارچه‌سازی با درگاه‌های پرداخت</td>
-</tr>
-<tr>
-<td>💎 پرداخت TON</td>
-<td>شارژ مستقیم با ارز Gram از طریق Memo</td>
-</tr>
-</table>
+
+
+<sub>ساخته شده با ❤️ توسط تیم <b>Net Visit</b></sub>
+
+
+<a href="https://net-visit.ir">
+<img src="https://img.shields.io/badge/Website-Net_Visit-000000?style=flat-square&logo=google-chrome&logoColor=white" />
+</a>
 </div>
 
-### 🖥️ مدیریت سرور
+### چند نکته برای شخصی‌سازی نهایی در گیت‌هاب:
+1. **لینک‌های اسکرین‌شات:** در بخش `📸 تصاویری از محیط ربات` دو تا لینک عکس آزمایشی گذاشتم (`via.placeholder.com`). کافیست از محیط ربات خود در گوشی دو تا اسکرین‌شات بگیرید، در یک Issue گیت‌هاب آپلود کنید (تا لینک مستقیم بگیرید) و جایگزین آن‌ها کنید.
+2. **لینک ریپازیتوری:** در بخش بالا که نوشته `YOUR_USERNAME/YOUR_REPO` حتماً یوزرنیم و اسم مخزن گیت‌هاب خودتان را جایگزین کنید تا لینک‌های گزارش باگ کار کنند.
+3. **هدر سایت:** بنر بالای صفحه به صورت کاملاً اتوماتیک با کیفیت بالا و افکت موج رندر می‌شود و جذابیت بصری مخزن شما را به شدت بالا می‌برد.
 
-<div align="center">
-<table>
-<tr>
-<th>ویژگی</th>
-<th>توضیحات</th>
-</tr>
-<tr>
-<td>🟢 روشن/خاموش/ریبوت</td>
-<td>کنترل کامل Power سرور</td>
-</tr>
-<tr>
-<td>💿 بازنصب OS</td>
-<td>تغییر سیستم‌عامل با یک کلیک</td>
-</tr>
-<tr>
-<td>🔐 تغییر رمز API</td>
-<td>بدون نیاز به SSH از طریق OpenStack</td>
-</tr>
-<tr>
-<td>✏️ تغییر نام</td>
-<td>شخصی‌سازی نام سرور</td>
-</tr>
-<tr>
-<td>📊 مانیتورینگ</td>
-<td>آمار زنده سرور</td>
-</tr>
-<tr>
-<td>🔄 تمدید خودکار</td>
-<td>تمدید هوشمند با Cron Job</td>
-</tr>
-</table>
-</div>
-
-### 🚀 ویژگی‌های پیشرفته (VIP)
-
-<div align="center">
-<table>
-<tr>
-<th>ویژگی</th>
-<th>توضیحات</th>
-</tr>
-<tr>
-<td>🎨 نصب اسکریپت خودکار</td>
-<td>3x-ui، WordPress، Node.js، WireGuard، OpenVPN، Cloudflare Tunnel، Laravel</td>
-</tr>
-<tr>
-<td>🔥 مدیریت فایروال</td>
-<td>ساخت، اتصال، قطع و حذف Security Group</td>
-</tr>
-<tr>
-<td>💻 دستورات SSH</td>
-<td>اجرای دستورات مستقیم از ربات</td>
-</tr>
-<tr>
-<td>📡 پینگ زنده</td>
-<td>بررسی وضعیت سرور با PHP Socket</td>
-</tr>
-</table>
-</div>
-
-### 👥 سیستم کاربران
-
-<div align="center">
-<table>
-<tr>
-<th>ویژگی</th>
-<th>توضیحات</th>
-</tr>
-<tr>
-<td>💰 کیف پول</td>
-<td>مدیریت موجودی و تراکنش‌ها</td>
-</tr>
-<tr>
-<td>💸 انتقال وجه</td>
-<td>ارسال موجودی به کاربران دیگر</td>
-</tr>
-<tr>
-<td>👥 سیستم رفرال</td>
-<td>کسب ۵٪ سود از زیرمجموعه‌ها</td>
-</tr>
-<tr>
-<td>🎫 سیستم تیکت</td>
-<td>پشتیبانی ۲۴ ساعته</td>
-</tr>
-<tr>
-<td>❓ سوالات متداول</td>
-<td>FAQ داینامیک</td>
-</tr>
-</table>
-</div>
-
-### 🎛️ پنل مدیریت
-
-<div align="center">
-<table>
-<tr>
-<th>ویژگی</th>
-<th>توضیحات</th>
-</tr>
-<tr>
-<td>📊 آمار لحظه‌ای</td>
-<td>کاربران، درآمد، سرورهای فعال</td>
-</tr>
-<tr>
-<td>📢 پیام همگانی</td>
-<td>ارسال پیام به تمام کاربران</td>
-</tr>
-<tr>
-<td>💳 مدیریت مالی</td>
-<td>شارژ/کسر موجودی دستی</td>
-</tr>
-<tr>
-<td>🔐 استخر اکانت‌ها</td>
-<td>مدیریت چندین اکانت HostVDS</td>
-</tr>
-<tr>
-<td>🌐 مدیریت لوکیشن</td>
-<td>فعال/غیرفعال کردن دیتاسنترها</td>
-</tr>
-<tr>
-<td>⚙️ مدیریت پلن‌ها</td>
-<td>تعریف پلن‌های جدید</td>
-</tr>
-</table>
-</div>
-
----
-
-## 🏗️ معماری سیستم
-
-<div align="center">
