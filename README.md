@@ -15,7 +15,7 @@
 
 **یک ربات تلگرامی فوق‌پیشرفته برای مدیریت، فروش و اتوماسیون سرورهای ابری بر بستر OpenStack**
 
-[گزارش باگ](https://github.com/YOUR_USERNAME/YOUR_REPO/issues) · [درخواست قابلیت جدید](https://github.com/YOUR_USERNAME/YOUR_REPO/issues)
+**اکنون فقط دیتاسنتر cgi اضافه شده در آینده نیز بیشتر اراعه دهنده ها اضافه خواهند شد**
 
 </div>
 
@@ -46,13 +46,6 @@
 
 ## 📸 تصاویری از محیط ربات
 
-<div align="center">
-  <img src="https://via.placeholder.com/250x450.png?text=User+Panel+Screenshot" width="250" alt="منوی کاربری">
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="https://via.placeholder.com/250x450.png?text=Server+Management" width="250" alt="مدیریت سرور">
-</div>
-
----
 
 ## 🚀 راهنمای نصب و راه‌اندازی سریع
 
@@ -103,8 +96,6 @@ array(
 <sub>توسعه و بهینه‌سازی توسط تیم <b>Net Visit</b></sub>
 
 
-<a href="https://net-visit.ir">
-<img src="https://img.shields.io/badge/Website-Net_Visit-000000?style=flat-square&logo=google-chrome&logoColor=white" />
-</a>
+
 </div>
 
