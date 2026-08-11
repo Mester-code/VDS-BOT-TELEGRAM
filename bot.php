@@ -19,9 +19,9 @@ $ADMIN_ID   = ادمین; // ایدی عددی خودت
 
 // دیتابیس - هاست ایران باشه بهتره
 $db_host = 'localhost';
-$db_name = 'menuyari_vds';
-$db_user = 'menuyari_vds';
-$db_pass = 'Navidi85@'; // پسوردم همین بود عوضش نکن :))
+$db_name = 'name';
+$db_user = 'user';
+$db_pass = 'pass'; // 
 
 // =====================================================
 // ارایه اکانت های هاست وی دی اس
@@ -32,9 +32,9 @@ $navidi_accounts = array(
     array(
         'name'       => 'ci#1',
         'auth_url'   => "https://os-api.hostvds.com/identity/v3/auth/tokens",
-        'user_id'    => "797d939fcc5a4660b7e1ca54fe31b545",
-        'password'   => "Wz51DUyL2nnkmVbBvgaTvTwUXLE",
-        'project_id' => "feea2f4cce084f02a9b1a7958e033d11",
+        'user_id'    => "",
+        'password'   => "",
+        'project_id' => "",
         'max_servers'=> 10,
         'status'     => 1,
     ),
