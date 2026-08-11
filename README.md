@@ -15,7 +15,8 @@
 
 **یک ربات تلگرامی فوق‌پیشرفته برای مدیریت، فروش و اتوماسیون سرورهای ابری بر بستر OpenStack**
 
-اکنون فقط دیتاسنتر cgi اضافه شده در آینده نیز بیشتر اراعه دهنده ها ‌اضافه خواهند شد
+Currently only CGI datacenters are added, more providers will be added in the future.
+
 
 </div>
 
